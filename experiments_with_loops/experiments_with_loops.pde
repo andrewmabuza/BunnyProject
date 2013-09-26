@@ -1,16 +1,25 @@
-//working with a tutorial found on the Processing website in an attempt to fiugre out how to loop
+//working with a tutorial found on the Processing website in an attempt to figure out how to loop
+float a=500;
+float b=200;
+float speed=2;
 
 void setup() {
   size (500, 500);
+  background(0);
 }
 
 void draw () {
-  background(0);
-  for (int a=0; a<20;a=a+1) {
-    for (int b=0; b<20;b=b+1) {
 
-      ellipse (a*10, b*10, 50, 50);
+ 
+  for (int c=0; c<10;c=c+1) {
+    for (int d=0; d<10;d=d+1) {
+
+      ellipse (c+speed, d+speed, 50, 50);
     }
   }
+  a=a+speed;
+  b=b+speed;
 }
+
+
 

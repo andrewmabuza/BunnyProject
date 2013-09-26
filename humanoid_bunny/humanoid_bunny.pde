@@ -1,22 +1,20 @@
 float x=500;
 float y=500;
 float speed=2;
-float xPos= 0;
-float yPos;
 
 void setup() {
   size (1000, 1000);
-  background(0);
-  smooth();
-  yPos=height/2;
+   smooth();
+ 
 }
 
 void draw() {
 
-  
+  background(0);
   x=x+speed;
   y=y+speed;
-  if (xPos>width){speed=-2;}
+  if (x>width||x<0){speed=speed*-1;}
+   
 
   
   
