@@ -17,7 +17,7 @@ void draw() {
    
 
   
-  
+  fill(255, 182, 203);
   ellipse (x-42.5, y-300, 25, 100);
   ellipse (x+25.5, y-300, 25, 100);
   //ears
@@ -33,9 +33,11 @@ void draw() {
   ellipse(x-50, y+100, 75, 75);
   ellipse(x+50, y+100, 75, 75);
   //hands
-  ellipse (x-42.5, y-230, 10, 10);
-  ellipse (x+57.5, y-230, 10, 10);
+  fill(0);
+  ellipse (x-42.5, y-230, 20, 20);
+  ellipse (x+57.5, y-230, 20, 20);
   //eyes
+  fill(255, 182, 203);
   ellipse (x, y-200, 20, 20);
   //nose
 }
